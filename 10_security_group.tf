@@ -59,6 +59,17 @@ resource "aws_security_group" "lkb_sec" {
       security_groups  = null
       self             = null
     },
+    {
+      description      = "HTTP"
+      from_port        = 8080
+      to_port          = 8080
+      cidr_blocks      = ["0.0.0.0/0"]
+      ipv6_cidr_blocks = ["::/0"]
+      protocol         = "tcp"
+      prefix_list_ids  = null
+      security_groups  = null
+      self             = null
+    },
         {
       description      = "HTTP"
       from_port        = 3000
