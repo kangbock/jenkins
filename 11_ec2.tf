@@ -20,7 +20,7 @@ sudo docker run -itd --name n1 -p 80:80 nginx:lkb
 sudo docker build -t nodejs:lkb jenkins2/nodejs/.
 sudo docker run -itd --name j1 -p 3000:3000 nodejs:lkb
 sudo docker run -d --name db -e MYSQL_ROOT_PASSWORD=It1 -e MYSQL_PASSWORD=It1 mysql:5.7
-ssudo docker run -itd -p 8080:8080 --name jenkins -v /jenkins2/jenkins/volume:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/containers:/var/lib/docker/containers -u root jenkins/jenkins:lts
+sudo docker run -itd -p 8080:8080 --name jenkins -v /jenkins2/jenkins/volume:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/containers:/var/lib/docker/containers -u root jenkins/jenkins:lts
 sudo sh /jenkins2/nginx/mysql.sh
   EOF
 
