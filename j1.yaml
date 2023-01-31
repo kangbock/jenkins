@@ -14,6 +14,6 @@ spec:
     spec:     # pod spec
       containers:
         - name: nodejs
-          image: kangbock/nodejs:v3.6 # docker image name
+          image: kangbock/nodejs:latest # docker image name
           ports:
             - containerPort: 3000
