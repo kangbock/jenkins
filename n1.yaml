@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: kangbock/nginx:v7
+        image: kangbock/nginx:digest
         ports:
         - containerPort: 80
