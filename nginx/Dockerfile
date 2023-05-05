@@ -1,4 +1,4 @@
-FROM    nginx
+FROM    nginx:1-bullseye
 
 COPY    default.conf /etc/nginx/conf.d/
 COPY    login.html /usr/share/nginx/html/
