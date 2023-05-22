@@ -11,5 +11,5 @@ COPY    register.css /usr/share/nginx/html/
 COPY    504.html /usr/share/nginx/html/
 ADD    temp /usr/share/nginx/html/
 
-EXPOSE  80
 ENTRYPOINT ["/bin/bash", "-c"]
+EXPOSE  80
