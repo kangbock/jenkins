@@ -1,5 +1,7 @@
 FROM    nginx
 
+RUN     ls -al
+
 #COPY    default.conf /etc/nginx/conf.d/
 #COPY    login.html /usr/share/nginx/html/
 #COPY    logout.html /usr/share/nginx/html/
