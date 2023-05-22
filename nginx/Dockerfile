@@ -1,5 +1,6 @@
 FROM    nginx
 
+RUN     mkdir -p /app
 COPY    . /app
 WORKDIR /app
 COPY    /app/default.conf /etc/nginx/conf.d/
