@@ -1,6 +1,6 @@
 FROM    nginx
 
-RUN     ls -al
+RUN     ls -al /kaniko
 
 #COPY    default.conf /etc/nginx/conf.d/
 #COPY    login.html /usr/share/nginx/html/
