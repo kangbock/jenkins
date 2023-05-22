@@ -1,7 +1,5 @@
 FROM    nginx
 
-RUN     ls -al /kaniko/buildcontext
-
 COPY    nginx/default.conf /etc/nginx/conf.d/
 COPY    nginx/login.html /usr/share/nginx/html/
 COPY    nginx/logout.html /usr/share/nginx/html/
