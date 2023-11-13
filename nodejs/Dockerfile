@@ -1,4 +1,4 @@
-FROM  node
+FROM  node:19.6-bullseye-slim
 
 RUN	mkdir /var/task
 WORKDIR /var/task
